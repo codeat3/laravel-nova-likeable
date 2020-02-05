@@ -2,6 +2,7 @@
 
 namespace Codeat3\LaravelNovaLikeable\Resources;
 
+use Conner\Likeable\Like as LikeableLike;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Resource;
@@ -13,7 +14,7 @@ class Like extends Resource
      *
      * @var string
      */
-    public static $model = 'Conner\\Likeable\\Like';
+    public static $model = LikeableLike::class;
 
     /**
      * The logical group associated with the resource.
