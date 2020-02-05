@@ -15,16 +15,9 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    ],
     "require": {
         "php": "^7.2",
         "illuminate/support": "^6.0",
-        "laravel/nova": "^2.1",
         "rtconner/laravel-likeable": "^2.0"
     },
     "require-dev": {
