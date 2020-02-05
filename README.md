@@ -1,11 +1,11 @@
-# Very short description of the package
+# A laravel nova package for the `rtconner/laravel-likeable`
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/codeat3/laravel-nova-likeable.svg?style=flat-square)](https://packagist.org/packages/codeat3/laravel-nova-likeable)
 [![Build Status](https://img.shields.io/travis/codeat3/laravel-nova-likeable/master.svg?style=flat-square)](https://travis-ci.org/codeat3/laravel-nova-likeable)
 [![Quality Score](https://img.shields.io/scrutinizer/g/codeat3/laravel-nova-likeable.svg?style=flat-square)](https://scrutinizer-ci.com/g/codeat3/laravel-nova-likeable)
 [![Total Downloads](https://img.shields.io/packagist/dt/codeat3/laravel-nova-likeable.svg?style=flat-square)](https://packagist.org/packages/codeat3/laravel-nova-likeable)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+A nova resource package of `rtconner/laravel-likeable` for your `laravel/nova` application.
 
 ## Installation
 
@@ -16,9 +16,21 @@ composer require codeat3/laravel-nova-likeable
 ```
 
 ## Usage
+If you have a Nova resource `Post` on which you have used the trait `Likeable`, you can simply add the line in the Nova resource.
 
 ``` php
-// Usage description here
+    class Post extends Resource {
+        ...
+        public function fields(Request $request)
+        {
+            return [
+                ...
+                MorphMany::make('Likes', 'likes', \Codeat3\LaravelNovaLikeable\Resources\Like::class),
+            ];
+        }
+    }
+
+
 ```
 
 ### Testing
