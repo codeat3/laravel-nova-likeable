@@ -24,7 +24,8 @@
     "require": {
         "php": "^7.1",
         "illuminate/support": "^6.0",
-        "laravel/nova": "^2.1"
+        "laravel/nova": "^2.1",
+        "rtconner/laravel-likeable": "^2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
