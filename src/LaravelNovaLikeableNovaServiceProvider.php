@@ -24,7 +24,7 @@ class LaravelNovaLikeableNovaServiceProvider extends NovaApplicationServiceProvi
     protected function resources()
     {
         Nova::resources([
-            // Like::class,
+            Like::class,
         ]);
     }
 }
