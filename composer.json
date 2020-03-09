@@ -17,13 +17,13 @@
     ],
     "require": {
         "php": "^7.2",
-        "illuminate/support": "^6.2",
+        "illuminate/support": "^7.0",
         "rtconner/laravel-likeable": "^2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {
